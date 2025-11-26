@@ -39,7 +39,7 @@ public class Mochila{
 
         //Rellenamos la tabla con los valores óptimos
         for (int i = 1; i <= num; i++) {
-            Objeto obj = objetos.get(i - 1); //Obtenemos el objeto actual
+            Objeto obj = objetos.get(i - 1); //Obtenemos el objeto actual, i-1 pq lista objetos empieza en 0 y la tabla en 1
             for (int j = 0; j <= capacidad; j++) {
                 if (obj.getPeso() <= j) {
                     //Podemos meter el objeto: elegimos entre meterlo o no
