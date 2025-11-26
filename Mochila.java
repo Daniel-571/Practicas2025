@@ -34,7 +34,7 @@ public class Mochila{
         }
 
         //Creamos la tabla para la programación dinámica
-        //tabla[i][j] guarda el valor máximo usando los primeros i objetos y capacidad j
+        //num+1 pq necesitamos la fila 0 que es mingún objeto y capacidad+1 pq necesitamos la columna 0 que es capacidad vacia
         int[][] tabla = new int[num + 1][capacidad + 1];
 
         //Rellenamos la tabla con los valores óptimos
