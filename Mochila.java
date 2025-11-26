@@ -43,7 +43,7 @@ public class Mochila{
             for (int j = 0; j <= capacidad; j++) {
                 if (obj.getPeso() <= j) {
                     //Podemos meter el objeto: elegimos entre meterlo o no
-                    tabla[i][j] = Math.max(tabla[i - 1][j], tabla[i - 1][j - obj.getPeso()] + obj.getValor());
+                    tabla[i][j] = Math.max(tabla[i - 1][j], tabla[i - 1][j - obj.getPeso()] + obj.getValor()); //valor que ya tenía con el espacio restante + valor del objeto nuevo.
                 } else {
                     //No cabe: copiamos el valor anterior
                     tabla[i][j] = tabla[i - 1][j];
